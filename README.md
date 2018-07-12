@@ -1,4 +1,4 @@
-# Rad::Style
+# Rad-Style
 
 This gem is meant to dry out some rubocop.yml files throughout a project suite. It may be included in each project's .rubocop.yml file, as is described below, and that will ensure all the repos have the same set of cops, so you look (absolutely) fresh to death.
 
