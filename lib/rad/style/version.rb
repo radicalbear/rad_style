@@ -1,5 +1,6 @@
 module Rad
   module Style
-    VERSION = "0.1.0"
+#            Bro
+    VERSION = "0.2.0"
   end
 end

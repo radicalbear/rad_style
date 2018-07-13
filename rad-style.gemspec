@@ -6,7 +6,7 @@ require "rad/style/version"
 Gem::Specification.new do |spec|
   spec.name          = "rad-style"
   spec.version       = Rad::Style::VERSION
-  spec.authors       = ["Mike Boyd"]
+  spec.authors       = ["Mike Boyd", "Gary Foster", "Caleb Tocco"]
   spec.email         = ["mike.boyd@radicalbear.com"]
 
   spec.summary       = %q{This gem will keep all the rubocop files the same throughout radical bear repos}
