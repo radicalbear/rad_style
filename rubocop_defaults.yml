@@ -22,7 +22,7 @@ Lint/Debugger:
 # Calculated by number of assignments, branches, and conditions within a method
 # using this formula: http://c2.com/cgi/wiki?AbcMetric
 Metrics/AbcSize:
-  Max: 20  
+  Max: 20
 
 # Checks to see if the length of a block exceeds 25 lines
 Metrics/BlockLength:
@@ -43,16 +43,29 @@ Metrics/LineLength:
 
 # Too short methods lead to extraction of single-use methods, which can make
 # the code easier to read (by naming things), but can also clutter the class
-Metrics/MethodLength: 
+Metrics/MethodLength:
   Max: 15
 
-# This is unnecessary. Calling the argument `other` in all cases makes no sense.
+# This is unnecessary. Calling the argument `other` in all cases makes no sense
 Naming/BinaryOperatorParameterName:
   Enabled: false
 
 # Gives access to all the default 'enabled' rails-specific cops
 Rails:
   Enabled: true
+
+# allows the use of 'puts' instead of the logger on the seeds file only, and requires the logger for the
+# rest of the project
+Rails/Output:
+  Enabled: true
+  Exclude:
+    - 'db/seeds.rb'
+
+# Must use a bang after updates and creates so that it checks validations, but this is not necessary in seeds.rb
+Rails/SkipsModelValidations:
+  Enabled: true
+  Exclude:
+    - 'db/seeds.rb'
 
 # Check for uses of braces around single-line blocks, and also for multi-line blocks with an
 # attached method like: {...}.where
@@ -62,7 +75,7 @@ Style/BlockDelimiters:
   EnforcedStyle: braces_for_chaining
 
 # has_key? and has_value? are far more readable than key? and value? so this allows both
-# of those formats to be used 
+# of those formats to be used
 Style/PreferredHashMethods:
   Enabled: false
 
