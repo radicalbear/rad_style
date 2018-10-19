@@ -65,7 +65,7 @@ Rails/Output:
 Rails/SkipsModelValidations:
   Enabled: true
   Exclude:
-    - 'db/seeds.rb'
+    - 'spec/**/*.rb'
 
 # Check for uses of braces around single-line blocks, and also for multi-line blocks with an
 # attached method like: {...}.where
