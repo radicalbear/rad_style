@@ -28,6 +28,7 @@ Metrics/AbcSize:
 Metrics/BlockLength:
   Exclude:
     - 'spec/**/*.rb'
+    - 'config/routes.rb'
 
 # The guiding principle of classes is SRP, SRP can't be accurately measured by LoC
 Metrics/ClassLength:

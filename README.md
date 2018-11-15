@@ -1,12 +1,12 @@
 # Rad-Style
 
-This gem is meant to dry out some rubocop.yml files throughout a project suite. It may be included in each project's .rubocop.yml file, as is described below, and that will ensure all the repos have the same set of cops, so you look (absolutely) fresh to death.
+This gem is meant to simplify the task of managing multiple rubocop.yml files throughout a project suite. It may be included in each project's .rubocop.yml file, as is described below, and that will ensure all the repos have the same set of cops, so your code looks ___fresh to death___.
 
 ## Installation
 
 Add this line to your application's Gemfile:
 
-```
+```ruby
 group :test, :development do
   gem 'rad-style'
 end
@@ -28,11 +28,14 @@ Or install it yourself as:
 
 Create a .rubocop.yml with the following directives:
 
-```
+```yml
 inherit_gem:
   rad-style:
     - rubocop_defaults.yml
 ```
+
+## Rubocop Docs
+Here's [the manual](https://docs.rubocop.org/en/latest/) that Rubocop put together.
 
 ## License
 
@@ -40,6 +43,4 @@ The gem is available as open source under the terms of the [MIT License](https:/
 
 ## Acknowledgment
 
-Most of this setup was created thanks to Mike Fotinakis' really helpful tutorial on the subject:
-
-https://blog.percy.io/share-rubocop-rules-across-all-of-your-repos-f3281fbd71f8
+Most of this setup was created thanks to Mike Fotinakis' really [helpful tutorial](https://blog.percy.io/share-rubocop-rules-across-all-of-your-repos-f3281fbd71f8) on the subject.
