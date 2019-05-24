@@ -1,6 +1,6 @@
 # Rad-Style
 
-This gem is meant to simplify the task of managing multiple rubocop.yml files throughout a project suite. It may be included in each project's .rubocop.yml file, as is described below, and that will ensure all the repos have the same set of cops, so your code looks ___fresh to death___.
+This gem is meant to simplify the task of managing multiple rubocop.yml files throughout a project suite. It may be included in each project's .rubocop.yml file, as is described below, and that will ensure all the repos have the same set of cops, so your code looks ___raaad___.
 
 ## Installation
 
