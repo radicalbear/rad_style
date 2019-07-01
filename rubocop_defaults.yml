@@ -9,7 +9,7 @@ AllCops:
 # Want to use even indentation for the various methods within a class, and
 # also want to be able to indent private methods without errors
 Layout/IndentationConsistency:
-  EnforcedStyle: rails
+  EnforcedStyle: indented_internal_methods
 
 # Must use a comparator for conditionals instead of an equals sign
 Lint/AssignmentInCondition:
