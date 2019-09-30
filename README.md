@@ -44,3 +44,10 @@ The gem is available as open source under the terms of the [MIT License](https:/
 ## Acknowledgment
 
 Most of this setup was created thanks to Mike Fotinakis' really [helpful tutorial](https://blog.percy.io/share-rubocop-rules-across-all-of-your-repos-f3281fbd71f8) on the subject.
+
+## Development
+To update the gem on rubygems, do the following:
+```
+gem build rad-style.gemspec
+gem push rad-style-1.0.0.gem
+```
