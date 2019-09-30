@@ -7,7 +7,7 @@ This gem is meant to simplify the task of managing multiple rubocop.yml files th
 Add this line to your application's Gemfile:
 
 ```ruby
-group :test, :development do
+group :development do
   gem 'rad-style'
 end
 ```

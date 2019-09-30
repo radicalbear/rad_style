@@ -1,10 +1,17 @@
+require:
+  - rubocop-rails
+  - rubocop-rspec
+
 AllCops:
-  TargetRubyVersion: 2.5.1
-  TargetRailsVersion: 5.1
+  TargetRubyVersion: 2.6
+  TargetRailsVersion: 5.2.3
   Exclude:
     - 'db/schema.rb'
     - 'db/migrate/*'
     - 'lib/templates/**/*'
+    - 'spec/dummy/db/schema.rb'
+    - 'spec/dummy/db/migrate/*'
+    - 'spec/dummy/lib/templates/**/*'
 
 # Want to use even indentation for the various methods within a class, and
 # also want to be able to indent private methods without errors
@@ -27,20 +34,21 @@ Metrics/AbcSize:
 # Checks to see if the length of a block exceeds 25 lines
 Metrics/BlockLength:
   Exclude:
-    - 'spec/**/*.rb'
+    - 'spec/**/*_spec.rb'
     - 'config/routes.rb'
+    - 'spec/dummy/config/routes.rb'
 
 # The guiding principle of classes is SRP, SRP can't be accurately measured by LoC
 Metrics/ClassLength:
   Max: 1500
   Exclude:
-    - 'spec/**/*.rb'
+    - 'spec/**/*_spec.rb'
 
 # Commonly used screens these days easily fit more than 80 characters
 Metrics/LineLength:
   Max: 120
   Exclude:
-    - 'spec/**/*.rb'
+    - 'spec/**/*_spec.rb'
 
 # Too short methods lead to extraction of single-use methods, which can make
 # the code easier to read (by naming things), but can also clutter the class
@@ -66,7 +74,7 @@ Rails/Output:
 Rails/SkipsModelValidations:
   Enabled: true
   Exclude:
-    - 'spec/**/*.rb'
+    - 'spec/**/*_spec.rb'
 
 # Check for uses of braces around single-line blocks, and also for multi-line blocks with an
 # attached method like: {...}.where
@@ -97,3 +105,15 @@ Style/ParenthesesAroundCondition:
 # Fail is an alias of raise. Avoid aliases, it's more cognitive load for no gain.
 Style/SignalException:
   EnforcedStyle: only_raise
+
+RSpec/ExampleLength:
+  Enabled: false
+
+RSpec/MultipleExpectations:
+  Enabled: false
+
+Rails/HttpPositionalArguments:
+  Exclude:
+    # this just doesn't seem right for things like 'on: :member'
+    - 'spec/dummy/config/routes.rb'
+    - 'config/routes.rb'

@@ -2,7 +2,6 @@ PATH
   remote: .
   specs:
     rad-style (0.3.6)
-      rubocop (~> 0.7)
 
 GEM
   remote: https://rubygems.org/
@@ -10,16 +9,22 @@ GEM
     ast (2.4.0)
     jaro_winkler (1.5.3)
     parallel (1.17.0)
-    parser (2.6.3.0)
+    parser (2.6.4.1)
       ast (~> 2.4.0)
+    rack (2.0.7)
     rainbow (3.0.0)
-    rubocop (0.72.0)
+    rubocop (0.74.0)
       jaro_winkler (~> 1.5.1)
       parallel (~> 1.10)
       parser (>= 2.6)
       rainbow (>= 2.2.2, < 4.0)
       ruby-progressbar (~> 1.7)
       unicode-display_width (>= 1.4.0, < 1.7)
+    rubocop-rails (2.3.2)
+      rack (>= 1.1)
+      rubocop (>= 0.72.0)
+    rubocop-rspec (1.36.0)
+      rubocop (>= 0.68.1)
     ruby-progressbar (1.10.1)
     unicode-display_width (1.6.0)
 
@@ -28,6 +33,9 @@ PLATFORMS
 
 DEPENDENCIES
   rad-style!
+  rubocop (~> 0.7)
+  rubocop-rails
+  rubocop-rspec
 
 BUNDLED WITH
    1.17.3
