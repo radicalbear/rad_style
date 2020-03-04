@@ -97,6 +97,18 @@ Style/Documentation:
 Style/FrozenStringLiteralComment:
   Enabled: false
 
+# https://www.rubydoc.info/gems/rubocop/RuboCop/Cop/Style/HashEachMethods
+Style/HashEachMethods:
+  Enabled: true
+
+# https://www.rubydoc.info/gems/rubocop/RuboCop/Cop/Style/HashTransformKeys
+Style/HashTransformKeys:
+  Enabled: true
+
+# https://www.rubydoc.info/gems/rubocop/RuboCop/Cop/Style/HashTransformValues
+Style/HashTransformValues:
+  Enabled: true
+
 # Don't use parentheses around the condition of a control expression. And if there's an expression
 # wrapped in parentheses, this will recommend that it be moved to another method
 Style/ParenthesesAroundCondition:
