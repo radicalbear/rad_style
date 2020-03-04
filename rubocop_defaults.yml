@@ -18,6 +18,12 @@ AllCops:
 Layout/IndentationConsistency:
   EnforcedStyle: indented_internal_methods
 
+# Commonly used screens these days easily fit more than 80 characters
+Layout/LineLength:
+  Max: 120
+  Exclude:
+    - 'spec/**/*_spec.rb'
+
 # Must use a comparator for conditionals instead of an equals sign
 Lint/AssignmentInCondition:
   AllowSafeAssignment: false
@@ -41,12 +47,6 @@ Metrics/BlockLength:
 # The guiding principle of classes is SRP, SRP can't be accurately measured by LoC
 Metrics/ClassLength:
   Max: 1500
-  Exclude:
-    - 'spec/**/*_spec.rb'
-
-# Commonly used screens these days easily fit more than 80 characters
-Metrics/LineLength:
-  Max: 120
   Exclude:
     - 'spec/**/*_spec.rb'
 
