@@ -125,7 +125,7 @@ RSpec/MultipleExpectations:
   Enabled: false
 
 RSpec/NestedGroups:
-  MaxNesting: 5
+  Max: 5
 
 RSpec/ExpectInHook:
   Enabled: false
