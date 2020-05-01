@@ -124,6 +124,12 @@ RSpec/ExampleLength:
 RSpec/MultipleExpectations:
   Enabled: false
 
+RSpec/NestedGroups:
+  Max: 5
+
+RSpec/ExpectInHook:
+  Enabled: false
+
 Rails/HttpPositionalArguments:
   Exclude:
     # this just doesn't seem right for things like 'on: :member'
