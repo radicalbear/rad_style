@@ -32,6 +32,12 @@ Lint/AssignmentInCondition:
 Lint/Debugger:
   Enabled: true
 
+Lint/RaiseException:
+  Enabled: true
+
+Lint/StructNewOverride:
+  Enabled: true
+
 # Calculated by number of assignments, branches, and conditions within a method
 # using this formula: http://c2.com/cgi/wiki?AbcMetric
 Metrics/AbcSize:
