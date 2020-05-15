@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    rad-style (1.0.3)
+    rad-style (1.0.4)
 
 GEM
   remote: https://rubygems.org/

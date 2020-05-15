@@ -49,5 +49,5 @@ Most of this setup was created thanks to Mike Fotinakis' really [helpful tutoria
 To update the gem on rubygems, do the following:
 ```
 gem build rad-style.gemspec
-gem push rad-style-1.0.3.gem
+gem push rad-style-1.0.4.gem
 ```
