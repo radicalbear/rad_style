@@ -14,7 +14,7 @@ AllCops:
     - 'spec/dummy/lib/templates/**/*'
 
 Layout/EmptyLinesAroundAttributeAccessor:
-  Enabled: true
+  Enabled: false
 
 # Want to use even indentation for the various methods within a class, and
 # also want to be able to indent private methods without errors
