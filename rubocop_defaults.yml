@@ -13,6 +13,9 @@ AllCops:
     - 'spec/dummy/db/migrate/*'
     - 'spec/dummy/lib/templates/**/*'
 
+Layout/EmptyLinesAroundAttributeAccessor:
+  Enable: false
+
 # Want to use even indentation for the various methods within a class, and
 # also want to be able to indent private methods without errors
 Layout/IndentationConsistency:
@@ -24,13 +27,22 @@ Layout/LineLength:
   Exclude:
     - 'spec/**/*_spec.rb'
 
+Layout/SpaceAroundMethodCallOperator:
+  Enable: false
+
 # Must use a comparator for conditionals instead of an equals sign
 Lint/AssignmentInCondition:
   AllowSafeAssignment: false
 
+Lint/DeprecatedOpenSSLConstant:
+  Enable: false
+
 # Finds any cases of binding.pry or byebug left in the code
 Lint/Debugger:
   Enabled: true
+
+Lint/MixedRegexpCaptureTypes:
+  Enable: false
 
 Lint/RaiseException:
   Enabled: true
@@ -82,12 +94,38 @@ Rails/SkipsModelValidations:
   Exclude:
     - 'spec/**/*_spec.rb'
 
+Style/AccessorGrouping:
+  Enable: false
+
+Style/BisectedAttrAccessor:
+  Enable: false
+
 # Check for uses of braces around single-line blocks, and also for multi-line blocks with an
 # attached method like: {...}.where
 # It will still preferentially choose do/end for multi-line blocks
 Style/BlockDelimiters:
   Enabled: true
   EnforcedStyle: braces_for_chaining
+
+Style/ExponentialNotation:
+  Enable: false
+
+Style/RedundantAssignment:
+  Enable: false
+
+Style/RedundantFetchBlock:
+  Enable: false
+
+Style/RedundantRegexpCharacterClass:
+  Enable: false
+
+Style/RedundantRegexpExcape:
+  Enable: false
+
+Style/SlicingWithRange:
+  Enable: false
+
+
 
 # has_key? and has_value? are far more readable than key? and value? so this allows both
 # of those formats to be used
@@ -135,6 +173,9 @@ RSpec/NestedGroups:
 
 RSpec/ExpectInHook:
   Enabled: false
+
+RSpec/AnyInstance:
+  Enable: false
 
 Rails/HttpPositionalArguments:
   Exclude:
