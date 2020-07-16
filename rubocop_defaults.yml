@@ -14,7 +14,7 @@ AllCops:
     - 'spec/dummy/lib/templates/**/*'
 
 Layout/EmptyLinesAroundAttributeAccessor:
-  Enable: false
+  Enabled: false
 
 # Want to use even indentation for the various methods within a class, and
 # also want to be able to indent private methods without errors
@@ -28,21 +28,21 @@ Layout/LineLength:
     - 'spec/**/*_spec.rb'
 
 Layout/SpaceAroundMethodCallOperator:
-  Enable: false
+  Enabled: false
 
 # Must use a comparator for conditionals instead of an equals sign
 Lint/AssignmentInCondition:
   AllowSafeAssignment: false
 
 Lint/DeprecatedOpenSSLConstant:
-  Enable: false
+  Enabled: false
 
 # Finds any cases of binding.pry or byebug left in the code
 Lint/Debugger:
   Enabled: true
 
 Lint/MixedRegexpCaptureTypes:
-  Enable: false
+  Enabled: false
 
 Lint/RaiseException:
   Enabled: true
@@ -108,22 +108,22 @@ Style/BlockDelimiters:
   EnforcedStyle: braces_for_chaining
 
 Style/ExponentialNotation:
-  Enable: false
+  Enabled: false
 
 Style/RedundantAssignment:
-  Enable: false
+  Enabled: false
 
 Style/RedundantFetchBlock:
-  Enable: false
+  Enabled: false
 
 Style/RedundantRegexpCharacterClass:
-  Enable: false
+  Enabled: false
 
 Style/RedundantRegexpExcape:
-  Enable: false
+  Enabled: false
 
 Style/SlicingWithRange:
-  Enable: false
+  Enabled: false
 
 
 
@@ -175,7 +175,7 @@ RSpec/ExpectInHook:
   Enabled: false
 
 RSpec/AnyInstance:
-  Enable: false
+  Enabled: false
 
 Rails/HttpPositionalArguments:
   Exclude:
