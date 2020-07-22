@@ -50,6 +50,8 @@ Metrics/BlockLength:
     - 'spec/**/*_spec.rb'
     - 'config/routes.rb'
     - 'spec/dummy/config/routes.rb'
+    - 'spec/factories/*.rb'
+    - 'spec/factories/rad_common/*.rb'
 
 # The guiding principle of classes is SRP, SRP can't be accurately measured by LoC
 Metrics/ClassLength:
