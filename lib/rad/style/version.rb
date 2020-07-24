@@ -1,5 +1,5 @@
 module Rad
   module Style
-    VERSION = '1.0.4'
+    VERSION = '1.0.5'
   end
 end
