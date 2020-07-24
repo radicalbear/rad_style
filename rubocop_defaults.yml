@@ -3,6 +3,7 @@ require:
   - rubocop-rspec
 
 AllCops:
+  NewCops: enable
   TargetRubyVersion: 2.6
   TargetRailsVersion: 5.2.3
   Exclude:
@@ -49,6 +50,8 @@ Metrics/BlockLength:
     - 'spec/**/*_spec.rb'
     - 'config/routes.rb'
     - 'spec/dummy/config/routes.rb'
+    - 'spec/factories/**/*.rb'
+    - 'spec/rails_helper.rb'
 
 # The guiding principle of classes is SRP, SRP can't be accurately measured by LoC
 Metrics/ClassLength:
@@ -134,6 +137,15 @@ RSpec/NestedGroups:
   Max: 5
 
 RSpec/ExpectInHook:
+  Enabled: false
+
+RSpec/AnyInstance:
+  Enabled: false
+
+RSpec/MessageSpies:
+  Enabled: false
+
+RSpec/VerifiedDoubles:
   Enabled: false
 
 Rails/HttpPositionalArguments:
