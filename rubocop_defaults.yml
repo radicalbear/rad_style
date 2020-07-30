@@ -22,8 +22,6 @@ Layout/IndentationConsistency:
 # Commonly used screens these days easily fit more than 80 characters
 Layout/LineLength:
   Max: 120
-  Exclude:
-    - 'spec/**/*_spec.rb'
 
 # Must use a comparator for conditionals instead of an equals sign
 Lint/AssignmentInCondition:
