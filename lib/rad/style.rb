@@ -1,4 +1,4 @@
-require "rad/style/version"
+require 'rad/style/version'
 
 module Rad
   module Style

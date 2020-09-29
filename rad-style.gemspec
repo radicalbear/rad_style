@@ -1,4 +1,4 @@
-lib = File.expand_path('../lib', __FILE__)
+lib = File.expand_path('lib', __dir__)
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
 require 'rad/style/version'
 
@@ -7,7 +7,7 @@ Gem::Specification.new do |spec|
   spec.version       = Rad::Style::VERSION
   spec.authors       = ['Mike Boyd', 'Gary Foster', 'Caleb Tocco']
   spec.email         = ['mike.boyd@radicalbear.com']
-  spec.summary       = %q{This gem will keep all the rubocop files the same throughout radical bear repos}
+  spec.summary       = 'This gem will keep all the rubocop files the same throughout radical bear repos'
   spec.homepage      = 'https://github.com/radicalbear/rad_style'
   spec.license       = 'MIT'
 
@@ -21,7 +21,7 @@ Gem::Specification.new do |spec|
 
   # Specify which files should be added to the gem when it is released.
   # The `git ls-files -z` loads the files in the RubyGem that have been added into git.
-  spec.files = Dir.chdir(File.expand_path('..', __FILE__)) do
+  spec.files = Dir.chdir(File.expand_path(__dir__)) do
     `git ls-files -z`.split("\x0").reject { |f| f.match(%r{^(test|spec|features)/}) }
   end
 
@@ -29,7 +29,7 @@ Gem::Specification.new do |spec|
   spec.executables   = spec.files.grep(%r{^exe/}) { |f| File.basename(f) }
   spec.require_paths = ['lib']
 
-  spec.add_development_dependency 'rubocop', '>= 0.49.0'
-  spec.add_development_dependency 'rubocop-rails'
-  spec.add_development_dependency 'rubocop-rspec'
+  spec.add_development_dependency 'rubocop', '~> 0.92.0'
+  spec.add_development_dependency 'rubocop-rails', '~> 2.8.1'
+  spec.add_development_dependency 'rubocop-rspec', '~> 1.43.2'
 end
