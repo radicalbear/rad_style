@@ -48,9 +48,9 @@ Most of this setup was created thanks to Mike Fotinakis' really [helpful tutoria
 ## Development
 To update the gem on rubygems, do the following:
 ```
-bump the version # in version.rb
+bump the version # in version.rb and in these instructions below
 bundle
 commit/push
 gem build rad-style.gemspec
-gem push rad-style-1.0.6.gem
+gem push rad-style-1.0.8.gem
 ```

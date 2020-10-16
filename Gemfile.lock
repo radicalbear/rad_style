@@ -1,12 +1,12 @@
 PATH
   remote: .
   specs:
-    rad-style (1.0.7)
+    rad-style (1.0.8)
 
 GEM
   remote: https://rubygems.org/
   specs:
-    activesupport (6.0.3.3)
+    activesupport (6.0.3.4)
       concurrent-ruby (~> 1.0, >= 1.0.2)
       i18n (>= 0.7, < 2)
       minitest (~> 5.1)
@@ -18,11 +18,11 @@ GEM
       concurrent-ruby (~> 1.0)
     minitest (5.14.2)
     parallel (1.19.2)
-    parser (2.7.1.5)
+    parser (2.7.2.0)
       ast (~> 2.4.1)
     rack (2.2.3)
     rainbow (3.0.0)
-    regexp_parser (1.8.1)
+    regexp_parser (1.8.2)
     rexml (3.2.4)
     rubocop (0.92.0)
       parallel (~> 1.10)
@@ -33,7 +33,7 @@ GEM
       rubocop-ast (>= 0.5.0)
       ruby-progressbar (~> 1.7)
       unicode-display_width (>= 1.4.0, < 2.0)
-    rubocop-ast (0.7.1)
+    rubocop-ast (0.8.0)
       parser (>= 2.7.1.5)
     rubocop-rails (2.8.1)
       activesupport (>= 4.2.0)
@@ -58,4 +58,4 @@ DEPENDENCIES
   rubocop-rspec (~> 1.43.2)
 
 BUNDLED WITH
-   1.17.3
+   2.1.4
