@@ -52,5 +52,5 @@ bump the version # in version.rb and in these instructions below
 bundle
 commit/push
 gem build rad-style.gemspec
-gem push rad-style-1.0.8.gem
+gem push rad-style-1.0.9.gem
 ```

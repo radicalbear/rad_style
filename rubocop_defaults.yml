@@ -10,9 +10,6 @@ AllCops:
     - 'db/schema.rb'
     - 'db/migrate/*'
     - 'lib/templates/**/*'
-    - 'spec/dummy/db/schema.rb'
-    - 'spec/dummy/db/migrate/*'
-    - 'spec/dummy/lib/templates/**/*'
     - 'node_modules/**/*'
 
 # Want to use even indentation for the various methods within a class, and
@@ -66,6 +63,12 @@ Metrics/MethodLength:
 # This is unnecessary. Calling the argument `other` in all cases makes no sense
 Naming/BinaryOperatorParameterName:
   Enabled: false
+
+Naming/VariableNumber:
+  EnforcedStyle: snake_case
+  Exclude:
+    - 'config/initializers/simple_form_bootstrap.rb'
+    - 'config/initializers/simple_form.rb'
 
 # Gives access to all the default 'enabled' rails-specific cops
 Rails:
