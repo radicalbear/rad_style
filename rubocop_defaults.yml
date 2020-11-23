@@ -11,6 +11,20 @@ AllCops:
     - 'db/migrate/*'
     - 'lib/templates/**/*'
     - 'node_modules/**/*'
+    - 'bin/**/*'
+    - 'config/puma.rb'
+    - 'config/initializers/simple_form.rb'
+    - 'config/initializers/simple_form_bootstrap.rb'
+    - 'config/initializers/simple_form_components.rb'
+    - 'spec/dummy/db/schema.rb'
+    - 'spec/dummy/db/migrate/*'
+    - 'spec/dummy/lib/templates/**/*'
+    - 'spec/dummy/node_modules/**/*'
+    - 'spec/dummy/bin/**/*'
+    - 'spec/dummy/config/puma.rb'
+    - 'spec/dummy/config/initializers/simple_form.rb'
+    - 'spec/dummy/config/initializers/simple_form_bootstrap.rb'
+    - 'spec/dummy/config/initializers/simple_form_components.rb'
 
 # Want to use even indentation for the various methods within a class, and
 # also want to be able to indent private methods without errors
@@ -45,6 +59,7 @@ Metrics/BlockLength:
   Exclude:
     - 'spec/**/*_spec.rb'
     - 'config/routes.rb'
+    - 'config/environments/**/*.rb'
     - 'spec/dummy/config/routes.rb'
     - 'spec/factories/**/*.rb'
     - 'spec/rails_helper.rb'
@@ -66,9 +81,6 @@ Naming/BinaryOperatorParameterName:
 
 Naming/VariableNumber:
   EnforcedStyle: snake_case
-  Exclude:
-    - 'config/initializers/simple_form_bootstrap.rb'
-    - 'config/initializers/simple_form.rb'
 
 # Gives access to all the default 'enabled' rails-specific cops
 Rails:
